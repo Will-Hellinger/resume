@@ -1,0 +1,176 @@
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+\documentclass[10pt,letterpaper]{altacv}
+
+\geometry{left=1cm,right=1cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm,footskip=2\baselineskip}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{lato}
+
+\definecolor{Mulberry}{HTML}{72243D}
+%\definecolor{Mulberry}{HTML}{17b50e} %subtext color
+\definecolor{Mystic}{HTML}{E13F79}
+\definecolor{Bleu de France}{HTML}{3A8DEF}
+\definecolor{Glaucous}{HTML}{5B7FC5}
+\definecolor{SlateGrey}{HTML}{555555}
+\definecolor{LightGrey}{HTML}{444444} %subtext color 2
+\colorlet{heading}{Sepia}
+\colorlet{accent}{Mulberry}
+% \colorlet{heading}{Glaucous}
+% \colorlet{accent}{Glaucous}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+
+\usepackage[hidelinks]{hyperref}
+
+\input{info.tex} % This is the file you add your personal info to
+
+\begin{document}
+
+\name{Will Hellinger}
+\tagline{
+\seeking
+}
+\photo{6cm}{}
+\personalinfo{
+        \begin{flushright}
+                \normalsize
+                \github{\href{https://github.com/Will-Hellinger/}{Will-Hellinger}}
+                \\
+                \linkedin{\href{https://www.linkedin.com/in/will-hellinger/}{will-hellinger}}
+                \printinfo{\faPhone}{\href{tel:\mytel}{\mynumber}}
+                \email{\href{mailto:\myemail}{\myemail}}
+        \end{flushright}
+}
+
+\makecvheader
+
+\cvsection{Education}
+ 
+\cved{Rochester Institute of Technology, Rochester, NY}{Bachelor of Science in Computer Science}{}{Expected Graduation 2028}
+
+\cvsection{Skills}
+\cvevent{}{Languages}{}{}
+\cvtag{Python}
+\cvtag{C}
+\cvtag{Go}
+\cvtag{Java}
+\cvtag{SQL}
+\cvtag{Bash}
+\cvtag{LaTeX}
+\cvtag{JavaScript}
+
+\medskip
+
+\cvevent{}{Tools}{}{}
+\cvtag{Git}
+\cvtag{Linux}
+\cvtag{Docker}
+\cvtag{Selenium}
+\cvtag{Requests}
+\cvtag{DNS}
+\cvtag{RAID}
+\cvtag{Trello}
+\cvtag{Slack}
+
+\cvsection{Work Experience}
+
+\cvexperience
+    {\href{https://www.rit.edu/}{Rochester Institute of Technology}}
+    {Information Technology Technician}
+    {
+        \begin{itemize}
+            \item Developing tools that help speed up workflow.
+            \item Diagnosing and repairing hardware and software issues on a variety of hardware configurations and operating systems.
+        \end{itemize}
+    }
+        {October 2024 -- Present}
+
+\cvexperience
+    {\href{https://www.ltisdschools.org/}{Lake Travis ISD}}
+    {Information Technology Intern}
+    {
+        \begin{itemize}
+            \item Played a critical role in maintaining the operational integrity of educational technology resources.
+            \item Diagnosed and repaired school specific hardware issues.
+        \end{itemize}
+    }
+        {June 2023 -- August 2023}
+
+\cvsection{Projects}
+
+\cvproject
+        {Confluence Crawler}
+        {
+                {\normalfont Fall 2024 -- Present}
+                {\normalfont\textbullet}
+                \href{https://github.com/Will-Hellinger/confluence-crawler}{github.com/Will-Hellinger/confluence-crawler}
+        }
+        {
+            \begin{itemize}
+                \item Developing a web automation tool that indicates errors and allows exports with confluence wikis
+                \item Utilizing threading to speed up the information scraping process.
+            \end{itemize}
+        }
+        {\cvtag{Python}\cvtag{Multithreading}\cvtag{Selenium}\cvtag{Requests}}
+
+\divider
+
+\cvproject
+        {Vemulate}
+        {
+                {\normalfont Spring 2024}
+                {\normalfont\textbullet}
+                \href{https://github.com/Will-Hellinger/vemulate}{github.com/Will-Hellinger/vemulate}
+        }
+        {
+            \begin{itemize}
+                \item Developed a compatibility layer to allow Python code designed for the Vex V5 Brain to run on non vex computers
+                \item Allows for accurate visual displays and virtual devices to be attached
+                \item Currently undergoing a complete rewrite to allow for a deeper disassembly and reverse engineering of the brain's communication with external devices
+            \end{itemize}
+        }
+        {\cvtag{Python}}
+
+\divider
+
+\cvproject
+        {Latin Client}
+        {
+                {\normalfont Spring 2022 -- Spring 2023}
+                {\normalfont\textbullet}
+                \href{https://github.com/Will-Hellinger/Latin-Client}{github.com/Will-Hellinger/Latin-Client}
+        }
+        {
+            \begin{itemize}
+                \item Developed a Python client that learns Latin over time by observing the user's browser and actively controlling it through Selenium.
+                \item Utilized threading to dynamically re-import sections of code for debugging, inject cookies, spoof page activity, and connect multiple clients to exchange information.
+                \item Built a Latin dictionary via web-scraping, later used to generate potential solutions for language conversion between Latin and English.
+            \end{itemize}
+        }
+        {\cvtag{Python}\cvtag{Multithreading}\cvtag{Selenium}\cvtag{JavaScript}}
+
+\cvsection{Clubs}
+
+\cvclub
+        {\href
+                {https://csh.rit.edu/}
+                {Computer Science House}}
+        {Systems Administrator}
+        {
+            \begin{itemize}
+                \item Helping various server based projects, including setup and deployment, docker configuration, and network troubleshooting
+            \end{itemize}
+        }
+        {August 2023 -- Present}
+
+\medskip
+
+\clearpage
+
+\end{document}
